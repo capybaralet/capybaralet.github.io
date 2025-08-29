@@ -13,7 +13,7 @@
 
 <style>
 
-body {background-color: darkturquoise;
+body {background-color: #b5edf4;
       font-family: Helvetica, Arial, sans-serif;
       font-size: 100%;
       line-height: 1.25;
@@ -31,7 +31,7 @@ h2 {
  
 p {
   font-size: 1em;
-  color: darkmagenta;
+  color: orangered;
 }
 
 div.right {
@@ -45,7 +45,7 @@ div.left {
 }
 
 a {
-  color: darkmagenta;
+  color: rgb(255, 122, 73);
   text-decoration: none;
 
 }
@@ -54,10 +54,10 @@ a:hover {
 }
 
 a.foo:hover {
-  color: #602040;
+  color: orangered;
 }
 a.nav:hover {
-  color:#602040;
+  color:orangered;
 }
 a.nav {
   color: white;
@@ -71,7 +71,7 @@ hr {
   margin-bottom: 5px;
 }
 div.top-panel {
-  padding: 30px;
+  padding: 10px;
 }
 div.nav-bar {
   font-size:1.1em;
@@ -98,14 +98,13 @@ div.foo {
 }
 div.foo1 {
   display: inline;
-  background-color: hotpink;
+  color: white;
   padding: 5px;
   font-weight:  bold;
-  color: DarkMagenta;
 }
 div.foo2 {
   display: inline;
-  background-color: #a85780;
+  background-color: #9AA6B2;
   padding: 5px;
   font-weight:  bold;
   color: white;
@@ -129,7 +128,9 @@ div.foo2 {
 
 <div class='nav-bar' >
   <a class='nav' href="#news">News</a> &nbsp;&nbsp;&nbsp;
-  <a class='nav' href="#people">People</a> &nbsp;&nbsp;&nbsp;
+  <a class='nav' href="#people">Students</a> &nbsp;&nbsp;&nbsp;
+  <a class='nav' href="#collaborators">Collaborators</a> &nbsp;&nbsp;&nbsp;
+  <a class='nav' href="#talks">Media Appearances</a> &nbsp;&nbsp;&nbsp;
 </div>
 
 <div class="txt-panel">  
@@ -149,7 +150,7 @@ I was previously an Assistant Professor at the University of Cambridge and a mem
  <!-- <b>Note: when contacting me for feedback or to express interest in collaboration, etc., it's helpful to say if you're happy for me to share your message with my research group.</b> -->
 
 <hr />
-<h2><a name="news">News:</a></h2>
+<h2><div id="news">News:</div></h2>
 <ul>
   <!-- <li>I'm looking for post-docs. Potential post-docs should reach out ASAP and strongly consider <a href="https://www.grantinterface.com/Process/Apply?urlkey=fli"> applying for funding from FLI </a>. </li> -->
   <li>Alan Chan has successfully defended his PhD thesis and will be joining GovAI.</li>
@@ -169,7 +170,7 @@ I was previously an Assistant Professor at the University of Cambridge and a mem
 </ul>
 
 <hr />
-<h2><a name="people">PhD Students:</a></h2>
+<h2><div id="people">PhD Students:</div></h2>
 
 <p>Neel Alex</p>
 <a href="mailto:alexneel@gmail.com">alexneel@gmail.com</a>
@@ -244,7 +245,7 @@ Bruno is a Ph.D. student at the University of Cambridge co-supervised by David K
 Aryeh is a Ph.D. student at University of Maryland Baltimore County co-supervised by I-Jeng Wang and David Krueger.
   
 <hr />
-<h2><a name="Collaborators">I have ongoing collaborations with the following students (among others) as well, who may be involved in supervising internship projects:</a></h2>
+<h2><div id="collaborators">Collaborators:</div></h2>
 <p>Ekdeep Singh Lubana (U Mich)</p>
  We are working on a mechanistic understanding of learning and generalization in deep learning, as in our paper "Mechanistic Mode Connetivity".
 <p>Alan Chan (Mila) </p>
@@ -255,8 +256,8 @@ Aryeh is a Ph.D. student at University of Maryland Baltimore County co-supervise
  We are working on addressing AI manipulation, as in our work "Characterizing Manipulation from AI Systems". 
 
 <hr />
-<h2><a name="Talks">Here is a recent example of a talk I've given at Edinburgh.  More examples can be found in my CV:</a></h2>
-<li> <a href="https://www.youtube.com/watch?v=PoNfZrIFE98&t=111s&ab_channel=AISHED">“Can we get Deep Learning systems to generalize safely?”</a> </li>
+<h2><div id="talks">Media Appearances:</div></h2>
+<a href="https://www.youtube.com/watch?v=PoNfZrIFE98&t=111s&ab_channel=AISHED">“Can we get Deep Learning systems to generalize safely?”</a>
   
   
 </div>
