@@ -60,14 +60,7 @@
             >
               {{ site.data.profile.short_bio }}
             </div>
-            {% if site.data.profile.cv_link %}
-            <a
-              target="_blank"
-              href="{{ site.data.profile.cv_link | relative_url }}"
-              ><i class="fas fa-file-alt"></i> Curriculum Vitae</a
-            >
             <br />
-            {% endif %}
           </div>
         </div>
         <hr />
@@ -82,8 +75,14 @@
                 >{{ site.data.profile.email | replace: "@", "(at)" }}</span
               >
             </a>
-
-            {% if site.data.profile.gscholar %} {%- if
+            {% if site.data.profile.cv_link %}
+            <a
+              class="pr-3 no-break"
+              target="_blank"
+              href="{{ site.data.profile.cv_link | relative_url }}"
+              ><i class="fas fa-file-alt"></i> Curriculum Vitae</a
+            >
+            {% endif %} {% if site.data.profile.gscholar %} {%- if
             site.data.profile.gscholar contains 'scholar.google' -%} {%- assign
             gscholar_url = site.data.profile.gscholar -%} {%- else -%} {%-
             assign gscholar_url = 'https://scholar.google.com/citations?user=' |
@@ -113,7 +112,7 @@
               target="_blank"
               href="https://twitter.com/{{ site.data.profile.twitter }}"
             >
-              <i class="fab fa-twitter"></i> Twitter
+              <i class="fab fa-x-twitter"></i>
             </a>
             {% endif %} {% if site.data.profile.linkedin %}
             <a
