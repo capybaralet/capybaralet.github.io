@@ -112,7 +112,15 @@
             >
               <i class="far fa-newspaper"></i> Media Inquiries</a
             >
-            {% if site.data.profile.twitter %}
+            {% if site.data.profile.blog %}
+            <a
+              class="pr-3 no-break"
+              target="_blank"
+              href="{{ site.data.profile.blog }}"
+            >
+              <i class="far fa-bookmark"></i> The Real AI
+            </a>
+            {% endif %} {% if site.data.profile.twitter %}
             <a
               class="pr-3 no-break"
               target="_blank"
