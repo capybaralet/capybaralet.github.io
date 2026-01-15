@@ -3,6 +3,7 @@ secondary_name: ""
 navbar_name: "David Scott Krueger"
 
 positions:
+  - name: CEO of <a href="https://evitable.com">Evitable</a>
   - name: Assistant Professor in Machine Learning
   - logo: /assets/images/badges/milalogowebcoulrgb.png # Logo is optional
     name: Mila, University of Montreal 2024-
